@@ -12,7 +12,6 @@ module Cratrix
 
     def run
       @window.clear
-      file = File.open("omg.log", "w+")
 
       loop do
         # -- Event -----------------------------------------------------------------------------------------------------------
@@ -32,8 +31,6 @@ module Cratrix
       end
 
       @window.shutdown
-
-      file.close
     end
 
   end
