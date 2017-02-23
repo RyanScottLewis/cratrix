@@ -1,0 +1,17 @@
+name: cratrix
+version: 0.1.0
+
+authors:
+  - Ryan Lewis <ryan@rynet.us>
+
+targets:
+  cratrix:
+    main: src/cratrix.cr
+
+crystal: 0.20.5
+
+license: MIT
+
+dependencies:
+  termbox:
+    github: andrewsuzuki/termbox-crystal
