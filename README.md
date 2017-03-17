@@ -10,7 +10,7 @@ To build and install to the filesystem, `cd` into the project directory and run:
 rake install
 ```
 
-To just build to the `bin/` directory, just run:
+To only build, just run:
 
 ```sh
 rake build
@@ -65,12 +65,6 @@ Simply run the following from the command-line:
 
 ```sh
 cratrix
-```
-
-If not installed, `cd` to the project directory and run:
-
-```sh
-bin/cratrix
 ```
 
 ## Contributing
