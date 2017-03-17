@@ -10,6 +10,7 @@ BUILD_PATH   = "#{BUILD_DIR}/#{RUBY_PLATFORM}"
 EXECUTABLE   = "#{BUILD_PATH}/#{PROJECT}"
 SOURCE_FILES = Rake::FileList.new('src/**/*.cr')
 INSTALL_FILE = "/usr/local/bin/#{PROJECT}"
+DEPENDENCIES = ".shards"
 
 def print_env
   constants = %w[PROJECT BUILD_DIR SOURCE_MAIN BUILD_PATH EXECUTABLE SOURCE_FILES INSTALL_FILE]
@@ -33,8 +34,12 @@ task :clean do
   rm BUILD_DIR
 end
 
+file DEPENDENCIES do
+  sh "crystal deps"
+end
+
 desc "Build the project"
-task build: EXECUTABLE
+task build: [DEPENDENCIES, EXECUTABLE]
 
 desc "Install the project to the filesystem"
 task install: :build do
