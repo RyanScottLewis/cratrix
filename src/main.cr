@@ -1,3 +1,3 @@
 require "./cratrix/*"
 
-Cratrix::Application.run
+Cratrix::CommandLine.run

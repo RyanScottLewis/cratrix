@@ -77,4 +77,4 @@ cratrix
 
 ## Contributors
 
-- [RyanScottLewis](https://github.com/RyanScottLewis) Ryan Scott Lewis - creator, maintainer
+- [Ryan Scott Lewis](https://github.com/RyanScottLewis) - creator, maintainer
